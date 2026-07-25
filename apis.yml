@@ -1,8 +1,17 @@
 aid: commerceiq
 name: CommerceIQ
-description: CommerceIQ is a company surfaced as a portfolio company of insight-partners, softbank-vision-fund,
-  trinity-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a
-  lead awaiting the enrichment pipeline.
+description: >-
+  CommerceIQ is an AI-powered ecommerce platform that helps consumer brands win in
+  algorithmic retail across sales, digital shelf, retail media, and content execution.
+  Its unified platform, Ally AI, packages four AI agents (Content, Shelf, Media, and
+  Sales) that optimize product content and SEO, monitor digital-shelf availability
+  and search rankings across 1,450+ retailers globally, manage and automate retail
+  media bidding and spend, and forecast and execute sales strategy from Amazon and
+  Walmart to Instacart and Criteo. Founded in 2019, CommerceIQ serves enterprise
+  brands including PepsiCo, P&G, Coca-Cola, and Colgate-Palmolive, and is backed by
+  Insight Partners, SoftBank Vision Fund, and Trinity Ventures. The company operates
+  as a managed enterprise platform and does not publish a public self-service API or
+  developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/commerceiq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +21,30 @@ x-backed-by:
 - trinity-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://djijnrz4nj20x.cloudfront.net/2026/07/opengraph-v2-a81c0ced.png
 tags:
 - Company
+- Ecommerce
+- Retail Media
+- Digital Shelf
+- Artificial Intelligence
+- Retail
+- Analytics
+- Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +52,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/commerceiq-domain-security.yml
 - type: Website
   url: https://www.commerceiq.ai/
+- type: LLMsTxt
+  url: llms/commerceiq-llms.txt
+- type: Blog
+  url: https://www.commerceiq.ai/blog
+- type: PrivacyPolicy
+  url: https://www.commerceiq.ai/privacy-policy
+- type: Support
+  url: https://www.commerceiq.ai/contact-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

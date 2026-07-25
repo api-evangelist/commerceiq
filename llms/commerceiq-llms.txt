@@ -1,0 +1,42 @@
+# CommerceIQ
+
+> CommerceIQ is an AI-powered ecommerce platform that helps brands win in algorithmic retail across sales, digital shelf, retail media, and content execution.
+
+## Core Pages
+
+- [Homepage](https://www.commerceiq.ai/)
+- [Platform overview](https://www.commerceiq.ai/platform-overview)
+- [Copilot for Amazon](https://www.commerceiq.ai/copilot-for-amazon)
+- [Digital Shelf Analytics](https://www.commerceiq.ai/digital-shelf-analytics)
+- [Retail Media Management](https://www.commerceiq.ai/retail-media-management)
+- [Content Optimization](https://www.commerceiq.ai/content-optimization)
+
+## Solutions
+
+- [Use cases](https://www.commerceiq.ai/use-cases)
+- [Industries](https://www.commerceiq.ai/industries)
+- [Amazon retailer page](https://www.commerceiq.ai/retailers/amazon)
+- [Walmart retailer page](https://www.commerceiq.ai/retailers/walmart)
+- [Instacart retailer page](https://www.commerceiq.ai/retailers/instacart)
+- [Criteo retailer page](https://www.commerceiq.ai/retailers/criteo)
+
+## Resources
+
+- [Resources](https://www.commerceiq.ai/resources)
+- [Blog](https://www.commerceiq.ai/blog)
+- [Case studies](https://www.commerceiq.ai/case-studies)
+- [Reports](https://www.commerceiq.ai/reports)
+- [Videos](https://www.commerceiq.ai/videos)
+- [Webinars and podcast](https://www.commerceiq.ai/webinars-podcast)
+
+## Company
+
+- [About CommerceIQ](https://www.commerceiq.ai/about-us)
+- [Careers](https://www.commerceiq.ai/careers)
+- [Press and news](https://www.commerceiq.ai/press-news)
+- [Contact](https://www.commerceiq.ai/contact-us)
+
+## Machine-Readable Discovery
+
+- [Sitemap](https://www.commerceiq.ai/sitemap.xml)
+- [Robots](https://www.commerceiq.ai/robots.txt)
