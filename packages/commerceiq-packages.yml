@@ -1,0 +1,141 @@
+generated: '2026-08-12'
+method: searched
+source: >-
+  npm registry search + registry.npmjs.org metadata for the @ciq-dev scope
+  (https://registry.npmjs.org/-/org/ciq-dev/package). Every package below is
+  confirmed first-party: the sole npm maintainer is ciq-dev with the address
+  npm-apps@commerceiq.ai, and the repository/homepage fields resolve to
+  bitbucket.org/commerceiq/*.
+summary:
+  package_count: 6
+  registries:
+  - npm
+  official_count: 6
+  api_client_sdk_count: 0
+  note: >-
+    CommerceIQ publishes six public npm packages, but NONE of them is a client
+    SDK for a CommerceIQ API. They are internal front-end and platform building
+    blocks (a CSS utility library, three UI/design-system libraries, a Vue
+    reporting plugin and a Node utility library) that the company publishes to
+    the public registry so its own applications can consume them. Because no
+    package wraps a CommerceIQ API, no `SDKs` pointer is emitted for this repo —
+    the sdk_count check is genuinely unmet, not merely unwired.
+registries_checked:
+- registry: npm
+  result: 6 first-party packages in the @ciq-dev scope
+- registry: pypi
+  result: 404 for commerceiq and commerce-iq
+- registry: rubygems
+  result: 404 for commerceiq
+- registry: crates.io
+  result: registry refused the unauthenticated search request (data-access policy)
+- registry: maven-central
+  result: no first-party artifact found
+- registry: nuget
+  result: no first-party artifact found
+- registry: pkg.go.dev
+  result: no first-party module found
+packages:
+- language: javascript
+  registry: npm
+  name: '@ciq-dev/style-guide'
+  url: https://www.npmjs.com/package/@ciq-dev/style-guide
+  install: npm install @ciq-dev/style-guide
+  official: true
+  kind: css-utility-library
+  api_client: false
+  version: 1.5.70
+  published: '2026-05-21'
+  first_published: '2021-01-12'
+  release_count: 186
+  license: ISC
+  repository: https://bitbucket.org/commerceiq/ciq-style-guide
+  description: CSS Utility Library
+- language: javascript
+  registry: npm
+  name: '@ciq-dev/ciq-design-system'
+  url: https://www.npmjs.com/package/@ciq-dev/ciq-design-system
+  install: npm install @ciq-dev/ciq-design-system
+  official: true
+  kind: design-system
+  api_client: false
+  version: 0.1.1-develop.11
+  published: '2026-07-27'
+  first_published: '2026-07-27'
+  release_count: 4
+  license: MIT
+  repository: https://github.com/CIQDesignGit/ciq-design-system
+  description: CIQ Design System — shadcn/ui components with CIQ brand tokens
+  note: >-
+    Latest published version is a pre-release (develop channel); no stable 0.1.x
+    has shipped. Repository field points at the CIQDesignGit GitHub org, which
+    could not be verified as CommerceIQ-owned during this pass (GitHub API
+    rate-limited), so no GitHubOrganization pointer was emitted.
+- language: javascript
+  registry: npm
+  name: '@ciq-dev/ciq-reporting-plugin'
+  url: https://www.npmjs.com/package/@ciq-dev/ciq-reporting-plugin
+  install: npm install @ciq-dev/ciq-reporting-plugin
+  official: true
+  kind: ui-plugin
+  api_client: false
+  version: 0.2.2
+  published: '2025-03-12'
+  first_published: '2025-03-12'
+  release_count: 3
+  license: null
+  repository: null
+  description: A Vue 2.6 library for integrating reporting functionality into your application.
+- language: javascript
+  registry: npm
+  name: '@ciq-dev/ciq-ui'
+  url: https://www.npmjs.com/package/@ciq-dev/ciq-ui
+  install: npm install @ciq-dev/ciq-ui
+  official: true
+  kind: ui-component-library
+  api_client: false
+  version: 0.0.71
+  published: '2025-02-24'
+  first_published: '2021-01-12'
+  release_count: 74
+  license: ISC
+  repository: https://bitbucket.org/commerceiq/ciq-ui
+  description: Vue UI component library (README is the default scaffold text)
+- language: javascript
+  registry: npm
+  name: '@ciq-dev/ciq-node-utils'
+  url: https://www.npmjs.com/package/@ciq-dev/ciq-node-utils
+  install: npm install @ciq-dev/ciq-node-utils
+  official: true
+  kind: internal-utility-library
+  api_client: false
+  version: 3.0.1
+  published: '2024-05-15'
+  first_published: '2020-08-01'
+  release_count: 26
+  license: MIT
+  repository: null
+  description: CIQ Node Utils with common functionality to be shared
+- language: javascript
+  registry: npm
+  name: '@ciq-dev/dashing-ui'
+  url: https://www.npmjs.com/package/@ciq-dev/dashing-ui
+  install: npm install @ciq-dev/dashing-ui
+  official: true
+  kind: ui-component-library
+  api_client: false
+  version: 0.3.2
+  published: '2024-04-11'
+  first_published: '2023-08-01'
+  release_count: 11
+  license: ISC
+  repository: null
+  description: Vue dashboard UI library (README is the default scaffold text)
+currency:
+  note: >-
+    Decay signal — only two of the six packages have shipped anything in the last
+    twelve months (@ciq-dev/style-guide, 2026-05-21; @ciq-dev/ciq-design-system,
+    2026-07-27). @ciq-dev/ciq-node-utils last published 2024-05-15 and
+    @ciq-dev/dashing-ui 2024-04-11.
+  most_recent_release: '2026-07-27'
+  oldest_stale_release: '2024-04-11'

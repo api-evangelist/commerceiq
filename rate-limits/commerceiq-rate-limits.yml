@@ -1,0 +1,25 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.commerceiq.ai/
+limit_count: 0
+limits: []
+headers: []
+status_on_exhaustion: null
+evidence:
+- url: https://www.commerceiq.ai/sitemap.xml
+  status: 200
+  note: no developer, API reference or rate-limit page among the 518 indexed URLs
+- url: https://api.commerceiq.ai/openapi.json
+  status: 302
+  note: >-
+    resolves through the *.commerceiq.ai wildcard ELB and redirects to
+    www.commerceiq.ai — a catch-all, not an API host
+- url: https://my.commerceiq.ai/openapi.json
+  status: 404
+note: >-
+  An honest zero with a caveat: CommerceIQ documents no rate limits because
+  CommerceIQ documents no public API. There is no developer portal, no
+  reference, and no machine-readable contract on any host (see x-coverage in
+  apis.yml), so there is no runtime rate-limit signal for an agent to read. No
+  RateLimits pointer is emitted — this file records the absence, it does not
+  assert a published limit surface.

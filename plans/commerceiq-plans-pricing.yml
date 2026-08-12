@@ -1,0 +1,26 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.commerceiq.ai/demo
+plan_count: 0
+pricing_model: contact-sales
+currency: null
+plans: []
+evidence:
+- url: https://www.commerceiq.ai/pricing
+  status: 404
+- url: https://www.commerceiq.ai/demo
+  status: 200
+  note: request-a-demo form; the only route to a price
+- url: https://www.commerceiq.ai/sitemap.xml
+  status: 200
+  note: >-
+    518 URLs, none of which is a pricing or plans page. The site is blog,
+    reports, case studies, press and product pages only.
+note: >-
+  CommerceIQ publishes no plans, no tiers, no list price and no quota or overage
+  table. Pricing is an enterprise contact-sales motion: the site has no /pricing
+  route (404) and the only commercial call to action is the request-a-demo form.
+  There is also no self-service sign-up — my.commerceiq.ai is a login for
+  existing tenants, not a registration surface. Recorded as an honest zero; no
+  Plans or Pricing pointer is emitted because there is nothing published to
+  point at.

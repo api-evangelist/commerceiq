@@ -1,0 +1,84 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.commerceiq.ai/faqs
+note: >-
+  CommerceIQ publishes no OpenAPI, AsyncAPI, GraphQL SDL or any other
+  machine-readable contract, so nothing here is derived from a spec. Every entry
+  below is either a claim CommerceIQ makes on its own public site (quoted
+  verbatim in `evidence`) or an honest `conforms: false` recorded because the
+  surface that would carry it does not exist.
+standards:
+- id: soc2-type-ii
+  conforms: true
+  evidence: >-
+    commerceiq.ai/faqs, "Is data secure?": "Yes. All data is encrypted in transit
+    and at rest. We maintain SOC 2 Type II compliance and support SSO,
+    role-based access, and audit logging across the platform."
+  attestation_published: false
+  attestation_note: >-
+    The claim is published; the attestation report itself is not. There is no
+    trust center — trust.commerceiq.ai and commerceiq.ai/trust, /security and
+    /compliance all resolve to the marketing catch-all or 404
+    (probe-security-programs.py returned trust=none on 2026-08-12).
+- id: sso-saml-oidc
+  conforms: partial
+  evidence: >-
+    commerceiq.ai/faqs states the platform supports SSO and role-based access,
+    but names no protocol (SAML 2.0 / OIDC), publishes no metadata endpoint, and
+    /.well-known/openid-configuration returns 404 on every CommerceIQ host.
+- id: encryption-in-transit-at-rest
+  conforms: true
+  evidence: >-
+    commerceiq.ai/faqs: "All data is encrypted in transit and at rest."
+    Independently corroborated by security/commerceiq-domain-security.yml —
+    www.commerceiq.ai negotiates TLSv1.3 and serves HSTS with
+    max-age=63072000; includeSubDomains; preload.
+- id: oauth2
+  conforms: false
+  evidence: >-
+    No published OAuth surface. /.well-known/oauth-authorization-server and
+    /.well-known/oauth-protected-resource return 404 on www.commerceiq.ai and
+    my.commerceiq.ai.
+- id: openid-connect
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on every probed host.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API or spec exists to carry a problem+json error contract.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on www.commerceiq.ai and my.commerceiq.ai.
+- id: rfc8615-well-known
+  conforms: false
+  evidence: >-
+    No /.well-known document of any kind is served — see
+    well-known/commerceiq-well-known.yml for the full 16-probe matrix.
+- id: llmstxt
+  conforms: true
+  evidence: >-
+    https://www.commerceiq.ai/llms.txt returns HTTP 200 text/plain with a real
+    llms.txt document (H1, blockquote summary, sectioned link lists). Saved
+    verbatim to llms/commerceiq-llms.txt.
+- id: a2a-agent-card
+  conforms: false
+  evidence: >-
+    /.well-known/agent-card.json and /.well-known/agent.json both return 404 on
+    www.commerceiq.ai and my.commerceiq.ai. No card was authored — per pipeline
+    rule, an agent card is search-only.
+consumes:
+  note: >-
+    CommerceIQ is a heavy API CONSUMER rather than an API producer — a
+    distinction worth recording because it is the whole shape of this company.
+    Its own FAQ describes integrating retailer and retail-media APIs on the
+    customer's behalf.
+  third_party_apis:
+  - name: Instacart Ads API
+    evidence: >-
+      commerceiq.ai/faqs: "CommerceIQ offers full integration with the Instacart
+      API, allowing for seamless collaboration and enhanced advertising efforts."
+  - name: Amazon Vendor Central / Amazon Retail Analytics
+    evidence: commerceiq.ai/faqs references ingesting data from Amazon Vendor Central and Amazon Retail Analytics.
+  - name: Amazon Advertising
+    evidence: https://www.commerceiq.ai/press-releases/commerceiq-is-now-an-amazon-advertising-partner
+  - name: Walmart Connect
+    evidence: https://www.commerceiq.ai/press-releases/commerceiq-selected-as-a-walmart-platform-partner

@@ -1,20 +1,64 @@
-generated: '2026-07-18'
+generated: '2026-08-12'
 method: searched
-source: live probes of https://www.commerceiq.ai/.well-known/*
-host: https://www.commerceiq.ai
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+source: >-
+  live probes of https://www.commerceiq.ai/.well-known/* and
+  https://my.commerceiq.ai/.well-known/* on 2026-08-12
+hosts:
+- host: https://www.commerceiq.ai
+  role: marketing site (Vercel)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://my.commerceiq.ai
+  role: customer application (e.fundamentals / digital shelf analytics SPA, login-gated)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+subdomain_enumeration:
+  source: https://api.certspotter.com/v1/issuances?domain=commerceiq.ai&include_subdomains=true
+  note: >-
+    *.commerceiq.ai is a wildcard that resolves to an AWS ELB
+    (ui-platform-public-1-prod-639708364.us-west-2.elb.amazonaws.com) which 302s
+    every unmatched host to https://www.commerceiq.ai/ — so api., docs.,
+    developer. and developers. all answer 200/302 as catch-alls, not as real
+    hosts. Certificate transparency was used instead to enumerate real hosts.
+    The only public non-catch-all hosts found were my.commerceiq.ai (customer
+    app), content.commerceiq.ai (CloudFront asset host),
+    academy.commerceiq.ai (WorkRamp LMS, gated),
+    support.dsa.commerceiq.ai (Freshdesk, knowledge base requires login),
+    targetiq-certification.commerceiq.ai (LearnWorlds), intranet.commerceiq.ai
+    (Google Sites, staff only) and gather-*.commerceiq.ai (internal, Google
+    OAuth gated). None of them serves a /.well-known document.
 notes: >-
-  No /.well-known discovery documents are published. CommerceIQ is a managed
-  enterprise ecommerce platform with no public API, so no security.txt, OIDC/OAuth
-  metadata, api-catalog, or ai-plugin manifest was found. Absence recorded for
-  auditability; no canonical WellKnown/SecurityTxt pointer earned.
+  No /.well-known discovery documents are published on any CommerceIQ host.
+  Absence recorded for auditability; per the pipeline rule, NO WellKnown or
+  SecurityTxt pointer is emitted because every probed path returned 404 — this
+  file documents an absence, not a presence.

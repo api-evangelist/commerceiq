@@ -34,7 +34,7 @@ accessModel:
   method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-12'
 image: https://djijnrz4nj20x.cloudfront.net/2026/07/opengraph-v2-a81c0ced.png
 tags:
 - Company
@@ -64,8 +64,42 @@ common:
   url: https://www.commerceiq.ai/privacy-policy
 - type: Support
   url: https://www.commerceiq.ai/contact-us
+- type: FAQ
+  url: https://www.commerceiq.ai/faqs
+- type: LinkedIn
+  url: https://www.linkedin.com/company/commerceiq/
+- type: Packages
+  url: packages/commerceiq-packages.yml
+- type: Conformance
+  url: conformance/commerceiq-conformance.yml
+- type: Compliance
+  url: https://www.commerceiq.ai/faqs
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Contract discovery (STEP 0b) run against every host: no OpenAPI, GraphQL,
+    MCP or agent card exists. Real finds were six first-party npm packages in
+    the @ciq-dev scope, a live llms.txt, and a published SOC 2 Type II claim.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    CommerceIQ ships only a login-gated enterprise application — *.commerceiq.ai
+    is a wildcard that 302s api., docs. and developer. to the marketing site, so
+    there is no developer host at all, and the company's own FAQ describes
+    consuming the Instacart and Amazon APIs rather than publishing one.
+  evidence:
+  - url: https://developer.commerceiq.ai/
+    status: 302
+  - url: https://api.commerceiq.ai/openapi.json
+    status: 302
+  - url: https://my.commerceiq.ai/openapi.json
+    status: 404
+  - url: https://www.commerceiq.ai/.well-known/agent-card.json
+    status: 404
+  - url: https://www.commerceiq.ai/sitemap.xml
+    status: 200
+  checked: '2026-08-12'
