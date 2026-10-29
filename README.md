@@ -64,6 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-CommerceIQ is a company surfaced as a portfolio company of insight-partners, softbank-vision-fund, trinity-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+CommerceIQ is an AI-powered ecommerce platform that helps consumer brands win in algorithmic retail across sales, digital shelf, retail media, and content execution. Its unified platform, Ally AI, packages four AI agents (Content, Shelf, Media, and Sales) that optimize product content and SEO, monitor digital-shelf availability and search rankings across 1,450+ retailers globally, manage and automate retail media bidding and spend, and forecast and execute sales strategy from Amazon and Walmart to Instacart and Criteo. Founded in 2019, CommerceIQ serves enterprise brands including PepsiCo, P&G, Coca-Cola, and Colgate-Palmolive, and is backed by Insight Partners, SoftBank Vision Fund, and Trinity Ventures. The company operates as a managed enterprise platform and does not publish a public self-service API or developer portal.
 
-Backed by: insight-partners, softbank-vision-fund, trinity-ventures — https://www.commerceiq.ai/
+**Areas:** Company · E-Commerce · Retail Media · Digital Shelf · Artificial Intelligence · Retail · Analytics · Marketing
+
+## CommerceIQ on APIs.io
+
+Everything profiled for CommerceIQ is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/commerceiq/](https://apis.io/providers/commerceiq/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Commerceiq Domain Security](https://apis.io/security/commerceiq/commerceiq-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Commerceiq Plans Pricing](https://apis.io/plans/commerceiq/commerceiq-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Commerceiq Rate Limits](https://apis.io/rate-limits/commerceiq/commerceiq-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.commerceiq.ai/)
+- [Support](https://www.commerceiq.ai/contact-us)
+- [Blog](https://www.commerceiq.ai/blog)
+- [Compliance](https://www.commerceiq.ai/faqs)
+- [Privacy policy](https://www.commerceiq.ai/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 13.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 18.4 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/commerceiq/](https://apis.io/providers/commerceiq/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CommerceIQ: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/commerceiq/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
